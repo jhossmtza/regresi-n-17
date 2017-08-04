@@ -1,0 +1,51 @@
+a <- 4
+b <- 3
+a + b
+a > b # a es mayor que b
+a>=a # a es mayor igual que a
+a<b # a es menor que b
+a<=b
+a==b #a es igual que b
+a==4
+#concepto de funcion
+x<-abs(2.5)#abs es la fn. del valor absoluto
+x
+help (abs)
+# para asignae valores a variables en R se usa una <-
+x<- "hola" ###variable tipo caracter
+z<- 6 # el igual solo funciona en una sola direccion 
+#en este curso los objetos o variables que se utilizan son de
+#caracter y numerico
+ciudad<- "Toluca" #uma emtrada
+nombres<- c("karla", "rodrigo", "Miguel", "Samuel") #caracter y 4 entradas
+edad<- c(28,17,49,31) #numerico y 4 entradas
+###se utiliza la fn class para preguntarle a r que tipo
+class(nombres)
+class(edad)
+
+basel<-data.frame (nombres, edad) # se crea una base de datos
+View (basel) ### ver la base de datos
+ls (basel)#ver la lista de var. en base 1
+basel$edad #para reconocer los datos de la var. 
+          #edad de la base1
+
+#ejercicio crear una var de nombre sexo con 4 entradas 
+#donde hombre es 1 y mujer es el valor 2, la primera entrada
+#es mujer y las otras tres son hombress¿
+#despues de crear la variable generen una nueva base 
+#de nombre base 2 con 3 var. nombres, edad y sexo
+
+sexo<- c(2,1,1,1)
+base2<-data.frame (nombres, edad, sexo)
+table (base2$sexo)
+table (base2$edad)
+
+palumnos<-c(40,120,60,80)
+etiq<-c("act","eco", "ri", "neg")
+pie (palumnos)
+pie (palumnos,etiq)
+pie(palumnos,etiq, main=
+              "Gráfica de los alumnos en 
+  la fac. de economía", sub= "Fuente: fac de economía",
+    col=c("blue","red","pink","yellowgreen"), 
+    radius= 1.5, clockwise= TRUE, lty=12)
