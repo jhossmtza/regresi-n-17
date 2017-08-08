@@ -1,0 +1,25 @@
+Tipos de puntos y lineas
+Podemos modificar tanto el tipo de linea o punto, como su color y tamaño. 
+Por ejemplo, la Figura representa una gráfica de tipo línea obtenida con la instrucción plot(density(cars$speed)). Vamos a ver qué argumentos debemos utilizar para modificarla y obtener la Figura.
+
+
+ 
+La instrucción requerida es 
+
+plot(density(cars$speed),lty=6,lwd=4,col=4) 
+El argumento col establecerá el color. El tipo de línea lo definimos con lty, que acepta varios valores numéricos. De la misma manera estableceremos la anchura de la linea con lwd .
+Para gráficos de puntos el procedimiento es muy similar. Para transformar la Figura en la Figura   debemos teclear 
+plot(cars$speed,cars$dist,pch=3,cex=.5,col=2) 
+ 
+
+Podemos ver que volvemos a dar color con col. Con pch, que acepta valores numéricos, establecemos el tipo de símbolo, correspondiendo el 3 a la cruz. Finalmente, con cex introducimos un factor de disminución o aumento del tamaño con respecto al que está definido por defecto.
+Podemos cambiar el trazado de las lineas mediante las siguientes opciones.
+•	lty: controla el tipo de las lineas
+o	1: solida
+o	2: quebrada
+o	3: punteada
+o	4: punto-linea
+o	5: linea larga-corta
+o	6: dos lineas cortas
+•	lwd: determinar el ancho de linea en relación con el valor por defecto (defecto=1)
+
