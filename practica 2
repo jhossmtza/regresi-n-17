@@ -42,6 +42,20 @@ ingreso>=40000
 aleatorios<- sample(1:10,20, replace=TRUE)
 (aleatorios<- sample(1:10,20, replace=T))
 
+##para selecciomar una posicion de un vector 
+ingreso[50]
+ingreso[30:43]
+ingreso[c(30,50,70)]
+ingreso[seq(20,50,10)]#va del 20 al 50 de 10 en 10
+ingreso[ingreso>40000]
+ingreso[ingreso<22000]
+ingreso[ingreso>20000 & ingreso<30000]#& = Y, | = O
+ingreso[ingreso>20000 & ingreso<30000]
+########################################
+#repetir
+ss<- c(5,-7,9)
+rr<- rep(ss,times=5)
+
 
 
 
