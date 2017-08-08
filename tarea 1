@@ -11,7 +11,7 @@ El argumento col establecerá el color. El tipo de línea lo definimos con lty, 
 Para gráficos de puntos el procedimiento es muy similar. Para transformar la Figura en la Figura   debemos teclear 
 plot(cars$speed,cars$dist,pch=3,cex=.5,col=2) 
  
-
+Figura: Personalización de puntos con pch,cex,col
 Podemos ver que volvemos a dar color con col. Con pch, que acepta valores numéricos, establecemos el tipo de símbolo, correspondiendo el 3 a la cruz. Finalmente, con cex introducimos un factor de disminución o aumento del tamaño con respecto al que está definido por defecto.
 Podemos cambiar el trazado de las lineas mediante las siguientes opciones.
 •	lty: controla el tipo de las lineas
