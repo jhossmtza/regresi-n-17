@@ -10,3 +10,38 @@ pie(calumn,etiq, main=
   la UAEM", sub= "Fuente: fac de economía",
     col=c("blue","red","pink","yellowgreen"), 
     radius= 1, clockwise= TRUE, lty=12)
+b
+c<- c(4,5,6)*c(5,2,1)
+d<- c(1:50,7,99)
+length(d)
+length(c)
+###operaciones logicas con vectores
+d>= 45
+d==50
+d!=35
+
+#sucesiones con operador 
+help(seq)
+z<- seq(0,30,3)#primero desde, segundo hasta, tercero cada cuanto
+z
+seq(from=1,to=30,by=3)
+seq(by=3,to=30,from=1)
+seq(10)
+seq(2,10)
+seq(from=3,to=10)
+secuencia<- seq(1,10,by=1)
+secuencial<-seq(0,100,by=10)
+sec2<- seq(300,130,-3)
+sec2
+
+#########MUESTRA#########################
+ingreso<-sample(20000:50000,100)#primer dato de donde a donde los numeros aleatorios 
+#segundo dato cuantos datos queremos
+ingreso
+ingreso>=40000
+aleatorios<- sample(1:10,20, replace=TRUE)
+(aleatorios<- sample(1:10,20, replace=T))
+
+
+
+
