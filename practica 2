@@ -55,7 +55,7 @@ ingreso[ingreso>20000 & ingreso<30000]
 #repetir
 ss<- c(5,-7,9)
 rr<- rep(ss,times=5)
-
+rr
 
 
 
