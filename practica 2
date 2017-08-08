@@ -1,0 +1,12 @@
+facultad<-c("economía", "ingeniaría", "arq", "derecho")
+licenciatura<-c("act", "ing",  "arq", "derecho")
+calumn<-c(6,4,10,8)
+base3<- data.frame(facultad, licenciatura, calumn)
+etiq<-c("act","ing", "arq", "derecho")
+pie (calumn)
+pie (calumn,etiq)
+pie(calumn,etiq, main=
+              "Gráfica de los alumnos en 
+  la UAEM", sub= "Fuente: fac de economía",
+    col=c("blue","red","pink","yellowgreen"), 
+    radius= 1, clockwise= TRUE, lty=12)
